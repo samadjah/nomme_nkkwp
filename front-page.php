@@ -68,7 +68,7 @@ $posts = get_posts( array(
    $the_query = new WP_Query( array(
        
        // otsime 2 postitust   kui on  postitusi siis kuva
-      'posts_per_page' => 2,
+      'posts_per_page' => 9,
    )); 
 ?>
 

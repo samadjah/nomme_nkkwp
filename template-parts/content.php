@@ -33,45 +33,7 @@
 
 	<?php nomme_nkkwp_post_thumbnail(); ?>
 	
-
-<!-- time to calculate block ending -->
-	
-
-<section onload="multiply();" class="time-tabel_units">
-	
-<?php
-// Check rows exists.
-if( have_rows('time_to_calculate') ):  ?>
-<!-- <section class="esimene-pool"> -->
-
-	<div class="time-box">
-		<ul class="time-listing">
-			<?php
-    // Loop through rows.
-    while( have_rows('time_to_calculate') ) : the_row();?>
-	<li>	
-		
-		<span><?php the_sub_field('preparation'); ?></span>
-		<?php the_sub_field('time-number'); ?>
-	
-		<?php the_sub_field('time-unit'); ?>
-	</li>	
-
-	
-    <?php endwhile; ?>
-</ul>
-</div> 
-<?php
-// No value.
-else :
-    // Do something...
-endif; ?>
-
-</section>
-
-	
-<!-- time to calculate block ending -->
-	
+<!-- panin mustandisse kalkulaatori -->
 
 <div class="entry-content">
 		<?php
@@ -113,11 +75,11 @@ endif; ?>
 </script> -->
 
 <!--inputdiv for helping solve calculation temporary -->
-<div style="margin:auto; width: 300px; background-color:lightblue; padding: 5px;">
+<!-- <div style="margin:auto; width: 300px; background-color:lightblue; padding: 5px;">
 	<label for="">Kogused x:</label>
 	<input Type="text" name="" class="kordaja" value="0" onchange="changeNumber()"><br>
 
-</div>
+</div> -->
 
 
 
@@ -222,26 +184,27 @@ endif; ?>
 
 <script>
 
-			const kordaja = 2;
-			const multiply = number => number * kordaja;
+// 			const kordaja = 2;
+// 			const multiply = number => number * kordaja;
 
-			function changeNumber() {
-				/* 	const myNodeList = document.querySelector(".solo").textContent;
-				console.log(myNodeList);
-				console.log(multiply(myNodeList));
- */
-				const myNodeList = document.querySelectorAll(".yhikud");
+// 			function changeNumber() {
+// 				/* 	const myNodeList = document.querySelector(".solo").textContent;
+// 				console.log(myNodeList);
+// 				console.log(multiply(myNodeList));
+//  */
+// 				const myNodeList = document.querySelectorAll(".yhikud");
 
-				for (let i = 0; i < myNodeList.length; i++) {
-					console.log(myNodeList[i].textContent);				
-					let result= multiply(myNodeList[i].textContent);
-					console.log(result);
-					myNodeList[i].textContent = result
-					console.log(myNodeList[i].textContent);
-				}
+// 				for (let i = 0; i < myNodeList.length; i++) {
+// 					console.log(myNodeList[i].textContent);				
+// 					let result= multiply(myNodeList[i].textContent);
+// 					console.log(result);
+// 					myNodeList[i].textContent = result
+// 					console.log(myNodeList[i].textContent);
+// 				}
 				
-			};
-			event.currentTarget.reset();
+// 			};
+			// event.currentTarget.reset();// ei se eikka oli midagi muud ei sobi ja vaata sul kordaja ei muutu,  2 on seega  topi mis nr sisse tahad ikak 2
+			
 
 
 

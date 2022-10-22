@@ -1116,11 +1116,11 @@ h2 {
 
 	/* mobilenav ärakeelatult  kuni meedias nähtavale */
 	.btn-mobile-nav {
-/* 		border: none;
+		border: none;
 		background: none;
 		cursor: pointer;
 		
-		display: none;  */
+		display: block; 
 		/* se eolioppenäiteskuidas ära peita, siin juba kuskil  teemas on se evist ära tehtud */
 		}
 	
@@ -1942,7 +1942,7 @@ h4.post-title{
 		font-size: 4.6rem; */
 		/* height: 9.8rem;
 		width: 4.8rem; kõrgus ei mõjunud fontsize mojus */
-/* 	} */
+/* 	} 
 	
 	
 	
@@ -2164,33 +2164,6 @@ h3 {
 	}
 
 /* ------------------------------------ */
-@media (max-width: 34rem) {
-	.main-container {
-		max-width: 34rem; }
-		
-		
-		.wp-block-quote {
-			margin-bottom: 1rem;}
-			
-		.galery_retseptid {
-			margin-bottom: 0.5rem;
-	}
-
-		.entry-content{
-			margin-bottom: 1.2rem;
-		}
-	.separate-footer-parts h2 {
-		font-size: 1.6rem;
-	}
-	}
-
-
-
-	/* Small menu. kirjutan yle */
-/* .menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
 
 @media screen and (min-width: 37.5em) {
 
@@ -2225,5 +2198,33 @@ h3 {
 	.meny-icons-doggle-on {
 		font-size: large;
 	}
-} */
+} 
+/* ------------------------------------ */
+@media (max-width: 34rem) {
+	.main-container {
+		max-width: 34rem; }
+		
+		
+		.wp-block-quote {
+			margin-bottom: 1rem;}
+			
+		.galery_retseptid {
+			margin-bottom: 0.5rem;
+	}
+
+		.entry-content{
+			margin-bottom: 1.2rem;
+		}
+	.separate-footer-parts h2 {
+		font-size: 1.6rem;
+	}
+	}
+
+
+
+	/* Small menu. kirjutan yle */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
 

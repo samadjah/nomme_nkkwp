@@ -142,7 +142,7 @@ function nomme_nkkwp_scripts() {
 	wp_style_add_data( 'nomme_nkkwp-style', 'rtl', 'replace' );
 
 /* siin on võibolla aktiveerimine kalkulaatorile kustuta ära kui jamab*/
-	wp_enqueue_script( 'nomme_nkkwp-calculation', get_template_directory_uri() . '/js/calculation.js', array(), _S_VERSION, true );
+	// wp_enqueue_script( 'nomme_nkkwp-calculation', get_template_directory_uri() . '/js/calculation.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'nomme_nkkwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
